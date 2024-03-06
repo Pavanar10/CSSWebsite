@@ -1,0 +1,29 @@
+.navbutton{
+    background-color: lawngreen;
+    padding: 11px 25px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  
+}
+/*turn off drop down menu  */
+.drop-down{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    margin-left: -30px;
+}
+
+/* Turn on drop down menu */
+.navbutton:hover .drop-down{
+    display: block;
+}
+.drop-down .navbutton{
+    background-color: cadetblue;
+}
+.drop-down .navbutton:hover{
+    background-color: rgb(211, 102, 199);
+    transition: 1ms;
+}
